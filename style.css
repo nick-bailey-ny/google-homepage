@@ -7,28 +7,64 @@ body {
     margin: 0 auto;
 }
 
-ul {
-    list-style-type: none;
-    margin: 5px 0px 0 -20px;
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    opacity: 75%;
+    cursor: pointer;
 }
 
-li {
-    display: inline;
+header {
+    position: absolute;
+    top: 0;
+    display: grid;
+    grid-template-columns: 70px 60px 895px 60px 60px 60px 80px;
+    grid-template-rows: 50px;
+    grid-template-areas: "about store . gmail images apps signin";
 }
 
-.tright {
-    float: right;
-    padding-top: 10px;
-    padding-right: 15px;
-    margin-top: 0px;
-    line-height: 2em;
-
+#about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
 }
 
-.tleft {
-    line-height: 3em;
-    padding-right: 15px;
-    text-align: left;
+#store {
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+}
+
+#gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+
+#images {
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
+
+#apps {
+    grid-area: apps;
+    justify-self: center;
+    align-self: center;
+}
+
+#signin {
+    grid-area: signin;
+    justify-self: center;
+    align-self: center;
+    background-color: rgb(66, 133, 244);
+    padding: 5px 10px;
+    border-radius: 2px;
+    color: white;
+    border-color: rgb(66, 133, 244);
+    border: 1px rgb(66, 133, 244) solid;
+    margin-right: 10px;
 }
 
 .logo {
@@ -60,9 +96,11 @@ input {
     border-radius: 4px;
     padding: 10px;
     margin-top: 10px;
-    width: 120px;
+    width: 130px;
     border: 0.5px, solid #d9d9d9;
+    border-width: thin;
     color: rgb(95, 99, 104);
+    font-size: 14px;
 }
 
 .search-buttons {
@@ -76,36 +114,48 @@ input[type=submit] {
     background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
 }
 
-.sign-in {
-    float: right;
-    background-color: rgb(66, 133, 244);
-    padding: 5px 10px;
-    border-radius: 2px;
-    color: white;
-    border-color: rgb(66, 133, 244);
-    border: 1px rgb(66, 133, 244) solid;
-    margin-top: .6em;
-    margin-right: 10px;
-}
-
-.bleft {
-    position: relative;
-    float: left;
-    padding-right: 15px;
-}
-
-.bright {
-    position: relative;
-    padding-right: 15px;
-    float: right;
-}
-
-footer {
+#footer {
     position: absolute;
     bottom: 0;
-    width: 100%;
-    height: 2.5rem;
     background-color: rgb(237, 238, 239);
-    line-height: 30px;
+    display: grid;
+    grid-template-columns: 100px 100px 150px 720px 70px 70px 70px;
+    grid-template-rows: 50px;
+    grid-template-areas: "advert biz hsw . privacy terms settings";
 }
 
+#advert {
+    grid-area: advert;
+    justify-self: center;
+    align-self: center;
+}
+
+#biz {
+    grid-area: biz;
+    justify-self: center;
+    align-self: center;
+}
+
+#hsw {
+    grid-area: hsw;
+    justify-self: center;
+    align-self: center;
+}
+
+#privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+}
+
+#terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+
+#settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
+}
