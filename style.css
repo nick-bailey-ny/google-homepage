@@ -17,6 +17,7 @@ a {
 
 header {
     position: absolute;
+    width: 100%;
     top: 0;
     display: grid;
     grid-template-columns: 70px 60px 895px 60px 60px 60px 80px;
@@ -116,6 +117,7 @@ input[type=submit] {
 
 #footer {
     position: absolute;
+    width: 100%;
     bottom: 0;
     background-color: rgb(237, 238, 239);
     display: grid;
