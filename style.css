@@ -11,16 +11,20 @@ a {
     text-decoration: none;
     color: #000000;
     font-size: 14px;
-    opacity: 75%;
     cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 header {
     position: absolute;
     width: 100%;
     top: 0;
+    color: rgba(0,0,0,0.87);
     display: grid;
-    grid-template-columns: 70px 60px 895px 60px 60px 60px 80px;
+    grid-template-columns: auto auto 1fr auto auto auto auto;
     grid-template-rows: 50px;
     grid-template-areas: "about store . gmail images apps signin";
 }
@@ -29,6 +33,7 @@ header {
     grid-area: about;
     justify-self: center;
     align-self: center;
+    margin: 15px;
 }
 
 #store {
@@ -41,18 +46,21 @@ header {
     grid-area: gmail;
     justify-self: center;
     align-self: center;
+    margin-right: 15px;
 }
 
 #images {
     grid-area: images;
     justify-self: center;
     align-self: center;
+    margin-right: 15px;
 }
 
 #apps {
     grid-area: apps;
     justify-self: center;
     align-self: center;
+    margin-right: 15px;
 }
 
 #signin {
@@ -65,7 +73,7 @@ header {
     color: white;
     border-color: rgb(66, 133, 244);
     border: 1px rgb(66, 133, 244) solid;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .logo {
@@ -73,8 +81,8 @@ header {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 130px;
-    padding-bottom: 37px;
+    padding-top: 150px;
+    padding-bottom: 20px;
 }
 
 .search-entry {
@@ -96,11 +104,11 @@ input {
     box-sizing: border-box;
     border-radius: 4px;
     padding: 10px;
-    margin-top: 10px;
-    width: 130px;
+    margin: 25px 5px 0 5px;
+    width: 140px;
     border: 0.5px, solid #d9d9d9;
     border-width: thin;
-    color: rgb(95, 99, 104);
+    cursor: pointer;
     font-size: 14px;
 }
 
@@ -121,7 +129,7 @@ input[type=submit] {
     bottom: 0;
     background-color: rgb(237, 238, 239);
     display: grid;
-    grid-template-columns: 100px 100px 150px 720px 70px 70px 70px;
+    grid-template-columns: auto auto auto 1fr auto auto auto;
     grid-template-rows: 50px;
     grid-template-areas: "advert biz hsw . privacy terms settings";
 }
@@ -130,12 +138,14 @@ input[type=submit] {
     grid-area: advert;
     justify-self: center;
     align-self: center;
+    margin: 15px;
 }
 
 #biz {
     grid-area: biz;
     justify-self: center;
     align-self: center;
+    margin-right: 15px;
 }
 
 #hsw {
@@ -148,16 +158,19 @@ input[type=submit] {
     grid-area: privacy;
     justify-self: center;
     align-self: center;
+    margin-left: 15px;
 }
 
 #terms {
     grid-area: terms;
     justify-self: center;
     align-self: center;
+    margin-left: 15px;
 }
 
 #settings {
     grid-area: settings;
     justify-self: center;
     align-self: center;
+    margin: 15px;
 }
